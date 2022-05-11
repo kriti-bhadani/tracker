@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS issue tracker</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container tracker">
+        <h1 class="tracker-head">JS Issue Tracker</h1>
+        <div>
+            <h3 class="tracker-subhead">Add New issue:</h3>
+
+            <form id="issueForm" class="form">
+                <div class="form-group">
+                    <label for="title" class="labels-type">Title</label>
+                    <input type="text" class="form-control mt-2" id="title" placeholder="enter title..." />
+                </div>
+                <div class="form-group mt-4">
+                    <label for="description" class="labels-type" >Description</label>
+                    <textarea id="description" class="form-control mt-2" placeholder="describe the issue..." rows="5" ></textarea>
+                </div>
+
+                <div class="form-group mt-4">
+                    <label for="priority" class="labels-type">Severity</label>
+                    <select id="priority" class="form-control mt-2">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+
+                <div class="form-group mt-4">
+                    <label for="responsible" class="labels-type">Assigned To</label>
+                    <input type="text" class="form-control mt-2" placeholder="Enter responsible..." id="responsible" />
+
+                </div>
+
+                <div class="tracker-btn">
+                <button type="submit">Add</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="row my-5 lists" >
+            <div class="col-lg-12">
+                <div class="tracker-options">
+                    <label>Choose Priority : 
+                    </label>
+                    <select id="prioritySelector" class="w-50 px-3 py-1">
+                        <option value="all">All</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                </div>
+
+                <div class="counters">
+                    <p class="counter">Opened Issues : <span id="openCounter" class="count">0</span></p>
+                    <p class="counter">Closed Issues: <span id="closeCounter" class="count">0</span></p>  
+                </div>
+               
+                <div id="list-container">
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
+<script src="http://chancejs.com/chance.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

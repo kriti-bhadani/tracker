@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.tracker {
+    margin: 30px auto;
+    padding:35px 25px;
+    width:700px;
+    background-color: #101028;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.tracker-head {
+    font-size: 30px;
+    font-weight: 700;
+    color: #9b9bd1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tracker-subhead {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.not-found {
+    font-size:30px;
+    font-weight:700;
+    color: #fff;
+}
+.form {
+    border-bottom: 2px solid #fff;
+}
+.labels-type {
+    font-weight:500;
+    font-size: 18px;
+}
+
+.tracker-btn {
+    text-align: center;
+    margin: 25px 0 15px 0;
+}
+
+.tracker-btn button {
+    padding: 7px 50px;
+    background: #9b9bd1;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.tracker-options label{
+    margin-right: 10px;
+}
+.counter {
+    font-size:23px;
+  
+}
+.count {
+    font-weight:700;
+}
+.counters {
+    margin:30px 0px;
+}
+
+.counters span {
+    margin-left: 5px;
+}
+
+#list-container {
+    color: #000;
+    border-radius: 10px;
+}
